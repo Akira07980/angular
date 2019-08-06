@@ -1,11 +1,13 @@
 <div class="container">
     <div class="row">
         <div class="col">
-
-
             <label>Titulo Persona</label>
             <input type="text" class="form-control" (input)="onModificarPersona($event)">
             <samp> {{tituloPersona}}</samp>
+            <p>------------------------</p>
+            <label>Titulo Persona con TWO WAY BINDING</label>
+            <input type="text" class="form-control" [(ngModel)]="titulo">
+             {{titulo}}
 
             <h1>Listado de Personas </h1>
             <button type="button" class="btn btn-primary btn-lg"
