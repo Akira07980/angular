@@ -10,6 +10,7 @@ export class PersonasComponent {
     agregarPersonaStatus = "No se ha agregado ninguna persona";
     tituloPersona = "";
     titulo = "Ingeniero ";
+    personaCreada =false;
 
     constructor() {
         setTimeout(
@@ -20,6 +21,7 @@ export class PersonasComponent {
     }
 
     onCrearPersona() {
+        this.personaCreada = true;
         this.agregarPersonaStatus = "Persona Agregada";
     }
 
